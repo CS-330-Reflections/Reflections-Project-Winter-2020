@@ -1,0 +1,24 @@
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.mood-list {
+    display: none;
+}
+
+.mood:hover .mood-list {
+    display: inline-block;
+}
+
+.mood {
+    display: inline-block;
+ }
+
+ .prompt {
+     display:block;
+ }
+
+ .entry {
+     display:block;
+ }
