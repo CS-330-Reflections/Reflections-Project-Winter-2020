@@ -7,25 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body id="container">
-        <!--    <aside id="sidebar">
-            <h1>
-            <i class="fab fa-spotify"></i>
-            </i>
-            Spotify
-            </h1>
-            <a href="#">
-            <i class="fas fa-home"></i>
-            Home
-            </a>
-            <a href="#">
-            <i class="fas fa-search"></i>
-            Search
-            </a>
-            <a class="selected" href="#">
-            <i class="fas fa-headphones-alt"></i>
-            Your Library
-            </a>
-            </aside>   -->
             <main>
                 <header>
                 	<h1>
@@ -66,15 +47,17 @@
                     <label for="prompt">Prompt:</label>
                     <select id="prompt" name="prompt">
                         <option value="free_entry"> Free entry</option>
-                        <option value="prompt1"> Prompt 1</option>
-                        <option value="prompt2"> Prompt 2</option>
-                        <option value="prompt3"> Prompt 3 </option>
+                        <option value="prompt1"> What was the best thing about your day?</option>
+                        <option value="prompt2"> What was something that inspired you today?</option>
+                        <option value="prompt3"> What happened today that was out of the ordinary? </option>
+                        <option value="prompt4"> Walk through your whole day. </option>
+                        <option value="prompt5"> What did you want to be when you were a child? </option>
+                        <option value="prompt6"> What were the major decisions that led you to this point in life? </option>
                     </select>
                     </div>
 
                     <label for="visual">Visual:</label>
-                    <input type="file" id="visual" name="visual" accept="image/*" capture>
-
+                    <input type="file" id="visual" name="visual" accept="image/*" capture> 
 
                     <div class="entry">
                     <textarea id="entry" rows="10" cols="50" placeholder="Write your entry here..."></textarea><br><br>
@@ -82,44 +65,11 @@
 
                     <input type="submit" value="Submit">
 
+
                 </form>
 
-
-                <!--    <article id="featured-content">
-                    <section class="artist-card">
-                    <div>
-                    <img src="https://i.scdn.co/image/62b33d12e2b9a033cf77585f6e3d4b2c6b3a63a1" />
-                    <h3>Taylor Swift</h3>
-                    <p>Artist</p>
-                    <span class="play-button"><i class="fas fa-play"></i></span>
-                    </div>
-                    </section>
-                    </article> -->
             </main>
-            <!--    <footer>
-                <div class="current-song">
-                <img src="https://i.scdn.co/image/5d6e2a7429fa5e1b8b833b4e153c7a4f190dfe67" alt="">
-                <div class="label">
-                <h3>Jump Then Fall</h3>
-                <p>Taylor Swift</p>
-                </div>
-                </div>
-                <div class="player">
-                <div class="controls">
-                <i class="fas fa-step-backward"></i>
-                <i class="far fa-play-circle"></i>
-                <i class="fas fa-step-forward"></i>
-                </div>
-                <div class="slider">
-                <audio preload class="audio">
-                <source src="#" type="audio/mpeg" />
-                </audio>
-                <span id="time-elapsed">0:00</span>
-                <input type="range" id="player-time">
-                <span id="time-total">3:00</span>
-                </div>
-                </div>
-                </footer>  -->
+
                 <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
                 <script>
                     $(document).ready(function(){

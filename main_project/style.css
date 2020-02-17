@@ -1,10 +1,41 @@
+*{
+	font-family: Geneva;
+	color: #01161e;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+body{
+	text-align: center;
+}
+button{
+	border-radius: 5px;
+	color: white;
+	background: #1C5D99;
+}
+
 input[type=date]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     display: none;
 }
 
+select{
+	border-radius: 5px;
+	color: white;
+	background: #1C5D99;
+}
+
+
 header h1 img{
 	width: 100%;
+}
+
+textarea{
+	border-radius: 15px;
+	border-width: 5px;
+	border-color: #BFD7EA;
+	height: 25%;
+	width: 75%;
 }
 
 .mood-list {
