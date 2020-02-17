@@ -32,49 +32,55 @@
             </header> <br><br><br><br>
 
 
-            <form action="/action_page.php">
-              <label for="date">Date:</label>
-              <input type="text" id="date" name="date">
+                <form action="">
+                    <label for="date">Date:</label>
+                    <input type="date" required="required" id="date-picker" name="date">
+                    <label for="mood">Mood:</label>
+                    <div class="mood">
+                        <button type="button" id="mood-button">Add a mood</button>
+                        <div class="mood-list">
+                            <i class="fas fa-smile" id="happy"></i>
+                            <i class="fas fa-surprise" id="surprised"></i>
+                            <i class="far fa-smile-wink" id="confident"></i>
+                            <i class="fas fa-meh" id="indifferent"></i>
+                            <i class="fas fa-meh-rolling-eyes" id="annoyed"></i>
+                            <i class="fas fa-grimace" id="apprehensive"></i>
+                            <i class="fas fa-frown" id="sad"></i>
+                            <i class="fas fa-sad-cry" id="hurt"></i>
+                            <i class="fas fa-angry" id="angry"></i>
+                        </div>
+                        <input type="hidden" id="mood" name="mood" value="none">
+                    </div>
+                    <br>
+                    <!--
+                        <select id="mood" name="mood">
+                        <option value="happy">Happy!</option>
+                        <option value="sad"> Sad!</option>
+                        <option value="angry"> Angry! </option>
+                        <option value="confused"> Confused </option>
+                        </select>
+                    -->
+                    <div class="prompt">
+                    <label for="prompt">Prompt:</label>
+                    <select id="prompt" name="prompt">
+                        <option value="free_entry"> Free entry</option>
+                        <option value="prompt1"> Prompt 1</option>
+                        <option value="prompt2"> Prompt 2</option>
+                        <option value="prompt3"> Prompt 3 </option>
+                    </select>
+                    </div>
+
+                    <label for="visual">Visual:</label>
+                    <input type="file" id="visual" name="visual" accept="image/*" capture>
 
 
-  <!--            <i class="fas fa-surprise"></i>
-              <i class="far fa-smile-wink"></i>
-              <i class="fas fa-meh"></i>
-              <i class="fas fa-meh-rolling-eyes"></i>
-              <i class="fas fa-grimace"></i>
-              <i class="fas fa-frown"></i>
-              <i class="fas fa-sad-cry"></i>
-              <i class="fas fa-angry"></i> -->
-                <label for="mood">Mood:</label>
-              <select id="mood" name="mood">
-                <option value="happy">Happy!</option>
-                <option value="sad"> Sad!</option>
-                <option value="angry"> Angry! </option>
-                <option value="confused"> Confused </option>
-              </select>
+                    <div class="entry">
+                    <textarea id="entry" rows="10" cols="50" placeholder="Write your entry here..."></textarea><br><br>
+                    </div>
 
-              <label for="visual">Visual:</label>
-              <input type="file" id="visual" name="visual"><br><br>
+                    <input type="submit" value="Submit">
 
-
-
-              <label for="prompt">Prompt:</label>
-              <select id="mood" name="mood">
-                <option value="free_entry"> Free entry</option>
-                <option value="prompt1"> Prompt 1</option>
-                <option value="prompt2"> Prompt 2</option>
-                <option value="prompt3"> Prompt 3 </option>
-                <option value="prompt4"> Prompt 4 </option>
-              </select><br><br>
-
-
-
-              <label for="entry">Entry:</label>
-              <textarea id="entry" rows="10" cols="50"> </textarea><br><br>
-
-              <input type="submit" value="Submit">
-
-            </form>
+                </form>
 
 
         <!--    <article id="featured-content">
