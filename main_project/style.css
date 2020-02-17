@@ -3,6 +3,10 @@ input[type=date]::-webkit-inner-spin-button {
     display: none;
 }
 
+header h1 img{
+	width: 100%;
+}
+
 .mood-list {
     display: none;
 }
