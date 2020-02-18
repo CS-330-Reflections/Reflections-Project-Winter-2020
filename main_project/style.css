@@ -25,7 +25,7 @@ input[type=date]::-webkit-inner-spin-button {
 }
 
 select{
-	border-radius: 5px;
+	border-radius: 10px;
 	color: white;
 	background: #639FAB;
 }
@@ -34,7 +34,7 @@ i{
 	color: #639FAB;
 }
 header h1 img{
-	width: 100%;
+	width: 65%;
 	border-radius: 20px;
 }
 
@@ -42,7 +42,7 @@ textarea{
 	border-radius: 15px;
 	border-width: 5px;
 	border-color: #BFD7EA;
-	height: 25%;
+	height: 45%;
 	width: 75%;
 }
 /*
@@ -50,12 +50,9 @@ HERE is the new button stuff
 */
 
 .mood-list i:hover {
-    color: #1C5D99;
+    color: #1C5D99 !important;
 }
 
-.mood-list i:active {
-    color: #1C5D99;
-}
 /*
 .mood:hover .mood-list {
     display: inline-block;
