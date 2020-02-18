@@ -25,14 +25,23 @@ input[type=date]::-webkit-inner-spin-button {
 }
 
 select{
-	border-radius: 10px;
-	color: white;
-	background: #639FAB;
+	border-radius: 2px;
+	border-color: #365157;
+	border-width: 5px;
+	border-right-color: #639FAB;
+	border-bottom-color: #639FAB;
 }
 
 i{
 	color: #639FAB;
 }
+
+input{
+	border-width: 5px;
+	border-color: #639FAB;
+	border-radius: 10px;
+}
+
 header h1 img{
 	width: 65%;
 	border-radius: 20px;
