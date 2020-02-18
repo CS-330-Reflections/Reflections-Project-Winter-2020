@@ -5,6 +5,10 @@
 	padding-bottom: 5px;
 }
 
+#container{
+	background: linear-gradient(white, #BFD7EA);
+}
+
 body{
 	text-align: center;
 }
@@ -28,6 +32,7 @@ select{
 
 header h1 img{
 	width: 100%;
+	border-radius: 20px;
 }
 
 textarea{
