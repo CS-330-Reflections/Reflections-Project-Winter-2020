@@ -26,19 +26,17 @@ input[type=date]::-webkit-inner-spin-button {
 
 select{
 	border-radius: 2px;
-	border-color: #365157;
+	border-color: #BFD7EA;
 	border-width: 5px;
-	border-right-color: #639FAB;
-	border-bottom-color: #639FAB;
 }
 
 i{
-	color: #639FAB;
+	color: #BFD7EA;
 }
 
 input{
 	border-width: 5px;
-	border-color: #639FAB;
+	border-color: #BFD7EA;
 	border-radius: 10px;
 }
 
@@ -59,7 +57,7 @@ HERE is the new button stuff
 */
 
 .mood-list i:hover {
-    color: #1C5D99 !important;
+    color: #7C8A96 !important;
 }
 
 /*
