@@ -20,17 +20,17 @@
                     <input type="date" required="required" id="date-picker" name="date">
                     <label for="mood">Mood:</label>
                     <div class="mood">
-                        <button type="button" id="mood-button">Add a mood</button>
+                        <!-- <button type="button" id="mood-button">Add a mood</button> -->
                         <div class="mood-list">
-                            <i class="fas fa-smile" id="happy"></i>
-                            <i class="fas fa-surprise" id="surprised"></i>
-                            <i class="fas fa-smile-wink" id="confident"></i>
-                            <i class="fas fa-meh" id="indifferent"></i>
-                            <i class="fas fa-meh-rolling-eyes" id="annoyed"></i>
-                            <i class="fas fa-grimace" id="apprehensive"></i>
-                            <i class="fas fa-frown" id="sad"></i>
-                            <i class="fas fa-sad-cry" id="hurt"></i>
-                            <i class="fas fa-angry" id="angry"></i>
+                            <i id="happy" onclick="moodClick(this.id)" class="fas fa-smile"></i>
+                            <i id="surprised" onclick="moodClick(this.id)" class="fas fa-surprise"></i>
+                            <i id="confident" onclick="moodClick(this.id)" class="fas fa-smile-wink"></i>
+                            <i id="indifferent" onclick="moodClick(this.id)" class="fas fa-meh"></i>
+                            <i id="annoyed" onclick="moodClick(this.id)" class="fas fa-meh-rolling-eyes"></i>
+                            <i id="apprehensive" onclick="moodClick(this.id)" class="fas fa-grimace"></i>
+                            <i id="sad" onclick="moodClick(this.id)" class="fas fa-frown"></i>
+                            <i id="hurt" onclick="moodClick(this.id)" class="fas fa-sad-cry"></i>
+                            <i id="angry" onclick="moodClick(this.id)" class="fas fa-angry"></i>
                         </div>
                         <input type="hidden" id="mood" name="mood" value="none">
                     </div>
@@ -79,6 +79,10 @@
                             $("#mood-button").hide();
                         });
                     });
+                    function moodClick(idc){
+                        if (document.getElementById(idc).style.color == "black") {document.getElementById(idc).style.color = "#639FAB";}
+                        else {document.getElementById(idc).style.color = "black";}
+                    }
                 </script>
     </body>
 </html>

@@ -12,10 +12,11 @@
 body{
 	text-align: center;
 }
+
 button{
 	border-radius: 5px;
 	color: white;
-	background: #1C5D99;
+	background: #639FAB;
 }
 
 input[type=date]::-webkit-inner-spin-button {
@@ -26,10 +27,12 @@ input[type=date]::-webkit-inner-spin-button {
 select{
 	border-radius: 5px;
 	color: white;
-	background: #1C5D99;
+	background: #639FAB;
 }
 
-
+i{
+	color: #639FAB;
+}
 header h1 img{
 	width: 100%;
 	border-radius: 20px;
@@ -42,14 +45,21 @@ textarea{
 	height: 25%;
 	width: 75%;
 }
+/*
+HERE is the new button stuff
+*/
 
-.mood-list {
-    display: none;
+.mood-list i:hover {
+    color: #1C5D99;
 }
 
+.mood-list i:active {
+    color: #1C5D99;
+}
+/*
 .mood:hover .mood-list {
     display: inline-block;
-}
+}*/
 
 .mood {
     display: inline-block;
