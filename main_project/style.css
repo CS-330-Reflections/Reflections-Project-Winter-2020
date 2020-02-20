@@ -1,0 +1,85 @@
+*{
+	font-family: Geneva;
+	color: #01161e;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#container{
+	background: linear-gradient(white, #BFD7EA);
+}
+
+body{
+	text-align: center;
+}
+
+button{
+	border-radius: 5px;
+	color: white;
+	background: #639FAB;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+select{
+	border-radius: 2px;
+	border-color: #BFD7EA;
+	border-width: 5px;
+}
+
+i{
+	color: #BFD7EA;
+}
+
+input{
+	border-width: 5px;
+	border-color: #BFD7EA;
+	border-radius: 10px;
+}
+
+header h1 img{
+	width: 65%;
+	border-radius: 20px;
+}
+
+textarea{
+	border-radius: 15px;
+	border-width: 5px;
+	border-color: #BFD7EA;
+	height: 45%;
+    min-width: 500px;
+    width: 50%;
+    font-size: 15px;
+}
+/*
+HERE is the new button stuff
+*/
+
+.mood-list i:hover {
+    color: #7C8A96 !important;
+}
+
+/*
+.mood:hover .mood-list {
+    display: inline-block;
+}*/
+
+.mood {
+    display: inline-block;
+ }
+
+ .prompt {
+     display:block;
+ }
+
+ .entry {
+     display:block;
+ }
+
+ #editor {
+	 height: 30vh;
+	 background-color: white;
+ }
