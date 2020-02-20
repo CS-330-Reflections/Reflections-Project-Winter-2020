@@ -76,3 +76,8 @@ HERE is the new button stuff
  .entry {
      display:block;
  }
+
+ #editor {
+	 height: 30vh;
+	 background-color: white;
+ }
