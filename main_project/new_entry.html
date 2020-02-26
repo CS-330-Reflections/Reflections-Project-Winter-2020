@@ -42,7 +42,7 @@
                             <i id="hurt" onclick="moodClick(this.id)" class="fas fa-sad-cry"></i>
                             <i id="angry" onclick="moodClick(this.id)" class="fas fa-angry"></i>
                         </div>
-                        <input type="hidden" id="mood" name="mood" value="none">
+                        <input type="hidden" id="mood" name="mood" value="[]">
                     </div>
                     <br>
 
@@ -126,7 +126,7 @@
                         var form_object =
                         {
                             "date" : $("#date-picker").val(),
-                            "mood" : $("#mood").val(),
+                            "mood" : JSON.parse($("#mood").val()).sort(),
                             "visual" : $("#visual").val(),
                             "prompt" : $("#prompt").val(),
                             "entry" : $("#entry").val(),
@@ -142,8 +142,20 @@
                     }
 
                     function moodClick(idc){
-                        if (document.getElementById(idc).style.color == "black") {document.getElementById(idc).style.color = "#BFD7EA";}
-                        else {document.getElementById(idc).style.color = "black";}
+                        var mood_icon = document.getElementById(idc);
+
+                        var mood_input = $("#mood");
+                        mood_JSON = mood_input.val();
+                        mood_val = JSON.parse(mood_JSON);
+                        if (mood_icon.style.color == "black") {
+                            mood_icon.style.color = "#BFD7EA";
+                            mood_val = mood_val.filter(el => (el != idc));
+                        } else {
+                            mood_icon.style.color = "black";
+                            mood_val.push(idc);
+                        }
+                        new_mood_JSON = JSON.stringify(mood_val);
+                        mood_input.val(new_mood_JSON);
                     }
                 </script>
 
