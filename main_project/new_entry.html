@@ -106,7 +106,7 @@
                     <div class="entry">
                     <textarea id="entry" name="entry" rows="10" cols="70" placeholder="Write your entry here..." required></textarea><br><br>
                     </div>
-                    <input type="submit" value="Submit">
+                    <button type="button" onclick="saveForm()">Submit</button>
 
                 </form>
 
@@ -122,9 +122,24 @@
                         });
                     });
 
-                    (document).ready(function(){
-                        
-                    });
+                    function saveForm() {
+                        var form_object =
+                        {
+                            "date" : $("#date-picker").val(),
+                            "mood" : $("#mood").val(),
+                            "visual" : $("#visual").val(),
+                            "prompt" : $("#prompt").val(),
+                            "entry" : $("#entry").val(),
+                        };
+                        var old_entries = JSON.parse(localStorage.getItem("data"));
+                        if (old_entries) {
+                            old_entries.push(form_object);
+                        } else {
+                            old_entries = [form_object];
+                        }
+                        localStorage.setItem("data", JSON.stringify(old_entries));
+                        window.location.href = "index.html";
+                    }
 
                     function moodClick(idc){
                         if (document.getElementById(idc).style.color == "black") {document.getElementById(idc).style.color = "#BFD7EA";}
