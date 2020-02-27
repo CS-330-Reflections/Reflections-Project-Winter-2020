@@ -1,9 +1,6 @@
 $(document).ready(function() {
     var date = Date();
     $("#date-picker").val(moment().format('YYYY-MM-DD'));
-    $("#mood-button").click(function() {
-        $("#mood-button").hide();
-    });
 });
 
 function saveForm() {
