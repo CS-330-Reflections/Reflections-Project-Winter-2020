@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Old Entries</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+    <script src="js/old_entries.js"></script>
+
+    <link rel="stylesheet" href="css/old_entries.css">
+</head>
+
+<body id="container">
+    <header>
+        <h1>
+            reflections.
+            <i class="fas fa-home" onclick="toMain()"></i>
+        </h1>
+    </header>
+
+    <br>
+
+    <form action="">
+        <div class="prompt-filter">
+            <label for="prompt-filter"></label>
+            <select id="prompt-filter" name="prompt-filter">
+                <option value="null" id="null">Prompt</option>
+                <option value="free_entry" id="free_entry">Free entry</option>
+                <option value="prompt1" id="prompt1">What was the best thing about your day?</option>
+                <option value="prompt2" id="prompt2">What was something that inspired you today?</option>
+                <option value="prompt3" id="prompt3">What happened today that was out of the ordinary?</option>
+                <option value="prompt4" id="prompt4">Walk through your whole day.</option>
+                <option value="prompt5" id="prompt5">What did you want to be when you were a child?</option>
+                <option value="prompt6" id="prompt6">What were the major decisions that led you to this point in life?</option>
+            </select>
+        </div>
+
+        <div class="mood-filter">
+            <label for="mood-filter"></label>
+            <select id="mood-filter" class="mood-filter">
+                <option value="null"><i id="null" class="fas fa-smile">Mood</i></option>
+                <option value="happy"><i id="happy" class="fas fa-smile">Happy</i></option>
+                <option value="surprised"><i id="surprised" class="fas fa-surprise">Surprised</i></option>
+                <option value="confident"><i id="confident" class="fas fa-smile-wink">Confident</i></option>
+                <option value="indifferent"><i id="indifferent" class="fas fa-meh">Indifferent</i></option>
+                <option value="annoyed"><i id="annoyed" class="fas fa-meh-rolling-eyes">Annoyed</i></option>
+                <option value="apprehensive"><i id="apprehensive" class="fas fa-grimace">Apprehensive</i></option>
+                <option value="sad"><i id="sad" class="fas fa-frown"></i>Sad</option>
+                <option value="hurt"><i id="hurt" class="fas fa-sad-cry">Hurt</i></option>
+                <option value="angry"><i id="angry" class="fas fa-angry">Angry</i></option>
+            </select>
+        </div>
+
+        <button type="button" class="filter_button" onclick="filter()">Filter</button>
+
+        <div class="past-entries">
+            <p id="prev-entries"></p>
+        </div>
+
+</body>
+
+</html>

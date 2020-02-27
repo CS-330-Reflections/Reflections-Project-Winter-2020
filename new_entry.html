@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>New Reflection</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+    <script src="third-party-libs/moment.min.js"></script>
+    <script src="js/new_entry.js"></script>
+
+    <link rel="stylesheet" href="css/new_entry.css">
+</head>
+
+<body id="container">
+    <header>
+        <h1>reflections.</h1>
+    </header>
+
+    <br>
+
+    <form action="">
+        <label for="date">Date:</label>
+        <input type="date" required="required" id="date-picker" name="date">
+
+        <label for="mood">Mood:</label>
+        <div class="mood">
+            <div class="mood-list">
+                <i id="happy" onclick="moodClick(this.id)" class="fas fa-smile"></i>
+                <i id="surprised" onclick="moodClick(this.id)" class="fas fa-surprise"></i>
+                <i id="confident" onclick="moodClick(this.id)" class="fas fa-smile-wink"></i>
+                <i id="indifferent" onclick="moodClick(this.id)" class="fas fa-meh"></i>
+                <i id="annoyed" onclick="moodClick(this.id)" class="fas fa-meh-rolling-eyes"></i>
+                <i id="apprehensive" onclick="moodClick(this.id)" class="fas fa-grimace"></i>
+                <i id="sad" onclick="moodClick(this.id)" class="fas fa-frown"></i>
+                <i id="hurt" onclick="moodClick(this.id)" class="fas fa-sad-cry"></i>
+                <i id="angry" onclick="moodClick(this.id)" class="fas fa-angry"></i>
+            </div>
+            <input type="hidden" id="mood" name="mood" value="[]">
+        </div>
+
+        <br>
+
+        <label for="visual">Visual:</label>
+        <input type="file" id="visual" name="visual" accept="image/*" capture="capture">
+
+        <div class="prompt">
+            <label for="prompt">Prompt:</label>
+            <select id="prompt" name="prompt">
+                <option value="free_entry">
+                    Free entry</option>
+                <option value="prompt1">
+                    What was the best thing about your day?
+                </option>
+                <option value="prompt2">
+                    What was something that inspired you today?
+                </option>
+                <option value="prompt3">
+                    What happened today that was out of the ordinary?
+                </option>
+                <option value="prompt4">
+                    Walk through your whole day.
+                </option>
+                <option value="prompt5">
+                    What did you want to be when you were a child?
+                </option>
+                <option value="prompt6">
+                    What were the major decisions that led you to this point in life?
+                </option>
+            </select>
+        </div>
+
+        <div class="entry">
+            <textarea id="entry" name="entry" rows="10" cols="70" placeholder="Write your entry here..." required="required"></textarea><br><br>
+        </div>
+
+        <button type="button" onclick="saveForm()">Submit</button>
+    </form>
+</body>
+
+</html>
