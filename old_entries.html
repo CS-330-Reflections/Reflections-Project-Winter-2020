@@ -3,6 +3,7 @@
 <head>
     <title>Old Entries</title>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
     <script src="js/old_entries.js"></script>
 
@@ -22,7 +23,7 @@
     <form action="">
         <div class="prompt-filter">
             <label for="prompt-filter"></label>
-            <select id="prompt-filter" name="prompt-filter" onchange="promptSelector()">
+            <select id="prompt-filter" name="prompt-filter">
                 <option value="null" id="null">Prompt</option>
                 <option value="free_entry" id="free_entry">Free entry</option>
                 <option value="prompt1" id="prompt1">What was the best thing about your day?</option>
@@ -36,7 +37,7 @@
 
         <div class="mood-filter">
             <label for="mood-filter"></label>
-            <select id="mood-filter" class="mood-filter" onchange="moodSelector()">
+            <select id="mood-filter" class="mood-filter">
                 <option value="null"><i id="null" class="fas fa-smile">Mood</i></option>
                 <option value="happy"><i id="happy" class="fas fa-smile">Happy</i></option>
                 <option value="surprised"><i id="surprised" class="fas fa-surprise">Surprised</i></option>
@@ -50,7 +51,7 @@
             </select>
         </div>
 
-        <button type="button" class="filter_button" onclick="returnVals()">Filter</button>
+        <button type="button" class="filter_button" onclick="filter()">Filter</button>
 
         <div class="past-entries">
             <p id="prev-entries"></p>

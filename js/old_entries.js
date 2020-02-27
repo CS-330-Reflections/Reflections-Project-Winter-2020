@@ -1,108 +1,42 @@
-var promptPicked = "null";
-var moodPicked = "null";
-var promptPickedInnerHTML = "null";
+const prompt_map = {
+    "free_entry": "Free Entry",
+    "prompt1": "What was the best thing about your day?",
+    "prompt2": "What was something that inspired you today?",
+    "prompt3": "What happened today that was out of the ordinary?",
+    "prompt4": "Walk through your whole day.",
+    "prompt5": "What did you want to be when you were a child?",
+    "prompt6": "What were the major decisions that led you to this point in life?",
+};
 
-function promptSelector() {
-    console.log(document.getElementById('prompt-filter').value);
-    promptPicked = document.getElementById('prompt-filter').value;
-    promptPickedInnerHTML = document.getElementById(promptPicked).innerHTML;
-    console.log(promptPickedInnerHTML);
-}
+function filter() {
+    const prompt_picked = $("#prompt-filter").val();
+    const mood_picked = $("#mood-filter").val();
+    var entries_html = $("#prev-entries");
 
-function moodSelector() {
-    console.log(document.getElementById('mood-filter').value);
-    moodPicked = document.getElementById('mood-filter').value;
-}
+    $("#prev-entries").html("Past entries:");
 
-var entryStorage = (JSON.parse(window.localStorage.getItem('data')));
+    JSON.parse(window.localStorage.getItem('data'))
+        .filter(entry => prompt_picked == "null" || entry.prompt == prompt_picked)
+        .filter(entry => mood_picked == "null" || entry.mood.includes(mood_picked))
+        .map(entry => {
+            entry.prompt = prompt_map[entry.prompt];
+            return entry;
+        })
+        .forEach(entry => {
+            $("#prev-entries").append(`
+                    <div class="past-entries">
+                      <p id="prev-entries">
 
-function returnVals() {
+                      Date: ${entry.date} <br>
+                      Mood: ${entry.mood.toString()} <br>
+                      Visual: ${entry.visual} <br>
+                      Prompt: ${entry.prompt} <br>
+                      Entry: ${entry.entry} <br>
 
-    if (promptPicked == "null" && moodPicked == "null") {
-        var filtered = entryStorage;
-        var i;
-        for (i = 0; i < filtered.length; i++) {
-            if (filtered[i].prompt == "free_entry") {
-                filtered[i].prompt = "Free Entry";
-            } else if (filtered[i].prompt == "prompt1") {
-                filtered[i].prompt = "What was the best thing about your day?";
-            } else if (filtered[i].prompt == "prompt2") {
-                filtered[i].prompt = "What was something that inspired you today?";
-            } else if (filtered[i].prompt == "prompt3") {
-                filtered[i].prompt = "What happened today that was out of the ordinary?";
-            } else if (filtered[i].prompt == "prompt4") {
-                filtered[i].prompt = "Walk through your whole day.";
-            } else if (filtered[i].prompt == "prompt5") {
-                filtered[i].prompt = "What did you want to be when you were a child?";
-            } else if (filtered[i].prompt == "prompt6") {
-                filtered[i].prompt = "hat were the major decisions that led you to this point in life?";
-            }
-        }
-    } else if (promptPicked != "null" && moodPicked == "null") {
-        var filtered = entryStorage.filter(a => a.prompt == promptPicked);
-        var i;
-        for (i = 0; i < filtered.length; i++) {
-            if (filtered[i].prompt == "free_entry") {
-                filtered[i].prompt = "Free Entry";
-            } else if (filtered[i].prompt == "prompt1") {
-                filtered[i].prompt = "What was the best thing about your day?";
-            } else if (filtered[i].prompt == "prompt2") {
-                filtered[i].prompt = "What was something that inspired you today?";
-            } else if (filtered[i].prompt == "prompt3") {
-                filtered[i].prompt = "What happened today that was out of the ordinary?";
-            } else if (filtered[i].prompt == "prompt4") {
-                filtered[i].prompt = "Walk through your whole day.";
-            } else if (filtered[i].prompt == "prompt5") {
-                filtered[i].prompt = "What did you want to be when you were a child?";
-            } else if (filtered[i].prompt == "prompt6") {
-                filtered[i].prompt = "What were the major decisions that led you to this point in life?";
-            }
-        }
-    } else if (promptPicked == "null" && moodPicked != "null") {
-        var filtered = entryStorage.filter(a => a.mood == moodPicked);
-        var i;
-        for (i = 0; i < filtered.length; i++) {
-            if (filtered[i].prompt == "free_entry") {
-                filtered[i].prompt = "Free Entry";
-            } else if (filtered[i].prompt == "prompt1") {
-                filtered[i].prompt = "What was the best thing about your day?";
-            } else if (filtered[i].prompt == "prompt2") {
-                filtered[i].prompt = "What was something that inspired you today?";
-            } else if (filtered[i].prompt == "prompt3") {
-                filtered[i].prompt = "What happened today that was out of the ordinary?";
-            } else if (filtered[i].prompt == "prompt4") {
-                filtered[i].prompt = "Walk through your whole day.";
-            } else if (filtered[i].prompt == "prompt5") {
-                filtered[i].prompt = "What did you want to be when you were a child?";
-            } else if (filtered[i].prompt == "prompt6") {
-                filtered[i].prompt = "hat were the major decisions that led you to this point in life?";
-            }
-        }
-    } else {
-        console.log("nothing picked");
-    }
-
-    document.getElementById('prev-entries').innerHTML = "Past entries:";
-    for (elem in filtered) {
-        console.log(filtered[elem].prompt);
-        document.getElementById('prev-entries').innerHTML += `
-                <div class="past-entries">
-                  <p id="prev-entries">
-
-                  Date: ${filtered[elem].date} <br>
-                  Mood: ${filtered[elem].mood} <br>
-                  Visual: ${filtered[elem].visual} <br>
-                  Prompt: ${filtered[elem].prompt} <br>
-                  Entry: ${filtered[elem].entry} <br>
-
-                  </p> <br> <br>
-                </div>
-            `;
-    }
-
-    JSON.stringify(filtered);
-
-    return filtered;
+                      </p> <br> <br>
+                    </div>
+                `);
+        });
 }
 
 function toMain() {
