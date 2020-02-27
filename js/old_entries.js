@@ -29,7 +29,15 @@ function filter() {
 
                       Date: ${entry.date} <br>
                       Mood: ${entry.mood.toString()} <br>
-                      Visual: ${entry.visual} <br>
+                      ${
+                          entry.visual == "" ?
+                          "" :
+                          `Visual:
+                              <img style="display:block;max-width:100%;height:auto;"
+                                    id="base64image"
+                                    src="${entry.visual}"/>
+                          <br>`
+                      }
                       Prompt: ${entry.prompt} <br>
                       Entry: ${entry.entry} <br>
 

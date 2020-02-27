@@ -1,13 +1,25 @@
 $(document).ready(function() {
     var date = Date();
     $("#date-picker").val(moment().format('YYYY-MM-DD'));
+    document.getElementById("visual").addEventListener("change", loadImageUrl, false);
 });
+
+var image_url = "";
+
+function loadImageUrl(event) {
+    var file = event.target.files[0];
+    var reader = new FileReader();
+    reader.onload = function(e) {
+        image_url = e.target.result;
+    };
+    reader.readAsDataURL(file);
+}
 
 function saveForm() {
     var form_object = {
         "date": $("#date-picker").val(),
         "mood": JSON.parse($("#mood").val()).sort(),
-        "visual": $("#visual").val(),
+        "visual": image_url,
         "prompt": $("#prompt").val(),
         "entry": $("#entry").val(),
     };
