@@ -1,29 +1,45 @@
 <html>
 
-<script src = "js/login.js"> </script>
+<head>
+    <title>Login</title>
 
-<form action="index.html" method="post">
-  <div class="imgcontainer">
-    <img src="img_avatar2.png" alt="Avatar" class="avatar">
-  </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/login.js"> </script>
 
-  <div class="container">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <link rel="stylesheet" href="css/login.css">
+</head>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+<body id="container">
+    <header>
+        <h1>reflections.</h1>
+    </header>
 
-    <button onclick="login()">Login</button>
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-  </div>
+    <br>
 
-  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw"> <a href="#">Forgot password?</a></span>
-  </div>
-</form>
+    <form action="">
+        <div class="imgcontainer">
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input id="uname" type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="pwd"><b>Password</b></label>
+            <input id="pwd" type="password" placeholder="Enter Password" name="pwd" required>
+
+            <button onclick="login()">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="pwd"> <a href="#">Forgot password?</a></span>
+        </div>
+    </form>
+
+</body>
 
 </html>
