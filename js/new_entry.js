@@ -24,7 +24,7 @@ function saveForm() {
         "entry": $("#entry").val(),
     };
 
-    var old_entries = JSON.parse(localStorage.getItem("data"));
+    var old_entries = JSON.parse(localStorage.getItem("entries"));
 
     if (old_entries) {
         old_entries.push(form_object);
@@ -32,7 +32,7 @@ function saveForm() {
         old_entries = [form_object];
     }
 
-    localStorage.setItem("data", JSON.stringify(old_entries));
+    localStorage.setItem("entries", JSON.stringify(old_entries));
     window.location.href = "index.html";
 }
 

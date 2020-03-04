@@ -15,7 +15,7 @@ function filter() {
 
     $("#prev-entries").html("Past entries:");
 
-    JSON.parse(window.localStorage.getItem('data'))
+    JSON.parse(window.localStorage.getItem('entries'))
         .filter(entry => prompt_picked == "null" || entry.prompt == prompt_picked)
         .filter(entry => mood_picked == "null" || entry.mood.includes(mood_picked))
         .map(entry => {
