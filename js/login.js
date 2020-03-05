@@ -28,9 +28,11 @@ function login() {
             console.log(i);
             populateProfileAndEntries(i);
             window.location.href = "index.html";
+            return;
         }
     }
     console.log("credentials didn't match any user");
+    alert("Error: Credentials didn't match any user!");
 }
 
 function startUserCount() {
