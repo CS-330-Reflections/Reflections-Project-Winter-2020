@@ -2,6 +2,7 @@
 
 <script src="js/users.js"></script>
 <script src="js/login.js"></script>
+<link rel="stylesheet" href="css/index.css">
 
     <head>
         <title>Profile Page</title>
@@ -10,13 +11,16 @@
     <body id="container">
         <main>
             <header>
-                <h1>reflections.</h1>
+                <h1>reflections.
+                    <i class="fas fa-home" onclick="toMain()"></i>
+                </h1>
             </header>
             <article>
                 <section id="profile-info">
-                    <img src="">
+                    <img id= "pro-photo" src="https://img3.stockfresh.com/files/k/kurhan/m/13/1787983_stock-photo-young-business-woman.jpg">
                     <h2 id="name">Name: </h2>
                     <h2 id="age"> Age: </h2>
+                    <h5 id="time"> Reflecting Since: </h5>
                     <div id="bio">
                         <h3>Who I am: </h3>
                     </div>
@@ -24,15 +28,14 @@
                     </div>
                 </section>
             </article>
-            <nav role=navigation>
-                <li> <a href="/new_entry.html">New entry</a>
-                </li>
-                <li> <a href="/old_entries.html">Old entries</a>
-                </li>
-            </nav>
         </main>
     </body>
-
+    <footer>
+        <nav role=navigation>
+            <a href="/new_entry.html">New entry</a> 
+            <a href="/old_entries.html">Old entries</a>
+        </nav>
+    </footer>
 
     <script src="js/profiles.js"></script>
 
