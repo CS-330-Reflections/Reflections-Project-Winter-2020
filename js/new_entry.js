@@ -57,3 +57,7 @@ function moodClick(idc) {
     new_mood_JSON = JSON.stringify(mood_val);
     mood_input.val(new_mood_JSON);
 }
+
+function toMain() {
+    window.location.href = "index.html";
+}
