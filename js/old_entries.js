@@ -15,36 +15,42 @@ function filter() {
 
     $("#prev-entries").html("Past entries:");
 
-    JSON.parse(window.localStorage.getItem('entries'))
+    const filtered =
+        JSON.parse(window.localStorage.getItem('entries'))
         .filter(entry => prompt_picked == "null" || entry.prompt == prompt_picked)
-        .filter(entry => mood_picked == "null" || entry.mood.includes(mood_picked))
-        .map(entry => {
-            entry.prompt = prompt_map[entry.prompt];
-            return entry;
-        })
-        .forEach(entry => {
-            $("#prev-entries").append(`
-                    <div class="past-entries">
-                      <p id="prev-entries">
+        .filter(entry => mood_picked == "null" || entry.mood.includes(mood_picked));
 
-                      Date: ${entry.date} <br>
-                      Mood: ${entry.mood.toString()} <br>
-                      ${
-                          entry.visual == "" ?
-                          "" :
-                          `Visual:
-                              <img style="display:block;max-width:100%;height:auto;"
-                                    id="base64image"
-                                    src="${entry.visual}"/>
-                          <br>`
-                      }
-                      Prompt: ${entry.prompt} <br>
-                      Entry: ${entry.entry} <br>
+    if (filtered.length > 0) {
+        filtered.map(entry => {
+                entry.prompt = prompt_map[entry.prompt];
+                return entry;
+            })
+            .forEach(entry => {
+                $("#prev-entries").append(`
+                        <div class="past-entries">
+                          <p id="prev-entries">
 
-                      </p> <br> <br>
-                    </div>
-                `);
-        });
+                          Date: ${entry.date} <br>
+                          Mood: ${entry.mood.toString()} <br>
+                          ${
+                              entry.visual == "" ?
+                              "" :
+                              `Visual:
+                                  <img style="display:block;max-width:100%;height:auto;"
+                                        id="base64image"
+                                        src="${entry.visual}"/>
+                              <br>`
+                          }
+                          Prompt: ${entry.prompt} <br>
+                          Entry: ${entry.entry} <br>
+
+                          </p> <br> <br>
+                        </div>
+                    `);
+            });
+    } else {
+        $("#prev-entries").html("No past entries match the filters!");
+    }
 }
 
 function toMain() {
