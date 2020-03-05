@@ -30,7 +30,7 @@ function filter() {
                         <div class="past-entries">
                           <p id="prev-entries">
 
-                          Date: ${entry.date} <br>
+                          Date: ${moment(entry.date).format("l")} <br>
                           Mood: ${entry.mood.toString()} <br>
                           ${
                               entry.visual == "" ?
