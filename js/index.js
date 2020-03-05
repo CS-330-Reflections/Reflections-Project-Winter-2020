@@ -15,3 +15,7 @@ $(document).ready(function() {
     $("#goals").append(profile["goals"]);
 
 });
+
+function toLogin() {
+    window.location.href = "login.html";
+}
