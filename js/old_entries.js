@@ -31,7 +31,11 @@ function filter() {
                           <p id="prev-entries">
 
                           Date: ${moment(entry.date).format("l")} <br>
-                          Mood: ${entry.mood.toString()} <br>
+                          ${
+                              entry.mood.toString() == "" ?
+                              "" :
+                              `Mood: ${entry.mood.toString()} <br>`
+                          }
                           ${
                               entry.visual == "" ?
                               "" :
