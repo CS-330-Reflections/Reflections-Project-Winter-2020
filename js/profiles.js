@@ -38,7 +38,7 @@ profiles = [{
         "mood": ["sad"],
         "visual": "",
         "prompt": "free_entry",
-        "entry": "Got a C on my test. Spent an hour at the gym trying to work off  the frustration. I'll do better next time."
+        "entry": "Got a C on my test. Spent an hour at the gym trying to work off the frustration. I'll do better next time."
     }, {
         "date": "2020-03-01",
         "mood": ["happy"],
@@ -50,7 +50,7 @@ profiles = [{
         "mood": [],
         "visual": "",
         "prompt": "free_entry",
-        "entry": "Went to a move night today"
+        "entry": "Went to a movie night today"
     }, {
         "date": "2020-01-01",
         "mood": ["apprehensive"],
