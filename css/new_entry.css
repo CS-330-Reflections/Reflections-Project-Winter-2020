@@ -68,6 +68,7 @@ textarea {
 }
 
 .mood-list i:hover {
+    cursor: pointer;
     color: #f6961e !important;
 }
 
