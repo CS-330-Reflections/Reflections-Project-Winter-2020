@@ -11,11 +11,19 @@ $(document).ready(function() {
     $("#pro-photo").attr("src", profile["photo"]);
     $("#name").append(profile["name"]);
     $("#age").append(profile["age"]);
+    $("#time").append(getReflectingSinceDate());
     $("#bio").append(profile["bio"]);
     $("#goals").append(profile["goals"]);
+
+    getReflectingSinceDate();
 
 });
 
 function toLogin() {
     window.location.href = "login.html";
+}
+
+function getReflectingSinceDate() {
+    const entries = JSON.parse(localStorage.getItem("entries"));
+    return moment.min(entries.map(entry => moment(entry["date"]))).format("l");
 }
