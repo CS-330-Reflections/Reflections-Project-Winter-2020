@@ -1,7 +1,7 @@
 users = [{
-    "uname": "uname1",
-    "pwd": "pwd1",
+    "uname": "nicole123",
+    "pwd": "nicole123",
 }, {
-    "uname": "uname2",
-    "pwd": "pwd2",
+    "uname": "andres123",
+    "pwd": "andres123",
 }]
