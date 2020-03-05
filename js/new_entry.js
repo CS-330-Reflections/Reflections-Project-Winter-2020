@@ -28,6 +28,7 @@ function saveForm() {
 
     if (old_entries) {
         old_entries.push(form_object);
+        old_entries = old_entries.sort((a, b) => moment(b.date).diff(moment(a.date)));
     } else {
         old_entries = [form_object];
     }
