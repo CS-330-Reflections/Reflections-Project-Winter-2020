@@ -42,8 +42,7 @@ function filter() {
                               `Visual:
                                   <img style="display:block;max-width:100%;height:auto;"
                                         id="base64image"
-                                        src="${entry.visual}"/>
-                              <br>`
+                                        src="${entry.visual}"/>`
                           }
                           Prompt: ${entry.prompt} <br>
                           Entry: ${entry.entry} <br>
