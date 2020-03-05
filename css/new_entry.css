@@ -49,7 +49,7 @@ select {
     border-width: 5px;
 }
 
-i {
+.mood-list i {
     color: #a9a5a6;
     font-size: 22px;
 }
