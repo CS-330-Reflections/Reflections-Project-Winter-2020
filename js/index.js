@@ -7,6 +7,8 @@ $(document).ready(function() {
     console.log(current_user_index);
     console.log(profile);
 
+
+    $("#pro-photo").attr("src", profile["photo"]);
     $("#name").append(profile["name"]);
     $("#age").append(profile["age"]);
     $("#bio").append(profile["bio"]);
