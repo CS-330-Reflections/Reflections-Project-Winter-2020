@@ -1,32 +1,39 @@
 <html lang="en">
+
+<script src="js/users.js"></script>
+<script src="js/login.js"></script>
+
     <head>
         <title>Profile Page</title>
-        <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="css/index.css">
 
     </head>
     <body id="container">
-        <header>
-            <h1>reflections.
-            <i class="fas fa-home" onclick="toMain()"></i>
-            </h1>
-        </header>
         <main>
+            <header>
+                <h1>reflections.</h1>
+            </header>
             <article>
                 <section id="profile-info">
-                    <img src="https://img3.stockfresh.com/files/k/kurhan/m/13/1787983_stock-photo-young-business-woman.jpg" id="pro-photo">
-                    <h2>Name</h2>
-                    <h3>Who I am</h3>
-                    <h4>My reflection goals</h3>
+                    <img src="">
+                    <h2 id="name">Name: </h2>
+                    <h2 id="age"> Age: </h2>
+                    <div id="bio">
+                        <h3>Who I am: </h3>
+                    </div>
+                    <div id="goals"> <h3>My reflection goals: </h3>
+                    </div>
                 </section>
             </article>
+            <nav role=navigation>
+                <li> <a href="/new_entry.html">New entry</a>
+                </li>
+                <li> <a href="/old_entries.html">Old entries</a>
+                </li>
+            </nav>
         </main>
     </body>
 
-    <footer>
-        <nav role=navigation>
-            <a href="/new_entry.html">New entry</a> 
-            <a href="/old_entries.html">Old entries</a>
-        </nav>
-    </footer>
+
+    <script src="js/profiles.js"></script>
+
 </html>
