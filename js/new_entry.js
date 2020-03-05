@@ -47,7 +47,7 @@ function moodClick(idc) {
     mood_val = JSON.parse(mood_JSON);
 
     if (mood_icon.style.color == "black") {
-        mood_icon.style.color = "#BFD7EA";
+        mood_icon.style.color = "#a9a5a6";
         mood_val = mood_val.filter(el => (el != idc));
     } else {
         mood_icon.style.color = "black";
