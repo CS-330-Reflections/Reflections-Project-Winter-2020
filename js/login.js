@@ -1,9 +1,25 @@
+$(document).ready(function() {
+    const remember_me = JSON.parse(localStorage.getItem("remember-me"));
+
+    console.log("remember me is ");
+    console.log(remember_me);
+
+    if (remember_me) {
+        $("#uname").val(remember_me["uname"])
+        $("#pwd").val(remember_me["pwd"])
+    }
+
+});
+
 function login() {
     startUserCount();
     configure();
 
     const uname = $("#uname").val();
     const pwd = $("#pwd").val();
+
+    rememberMe(uname, pwd);
+
     const user_count = localStorage.getItem("current-user-count");
 
     for (i = 0; i < user_count; i++) {
@@ -38,6 +54,22 @@ function configure() {
         localStorage.setItem("user-1-entries", JSON.stringify(profiles[1]["entries"]));
         localStorage.setItem("configured?", true);
     }
+}
+
+function rememberMe(uname, pwd) {
+    if ($("#remember").prop("checked")) {
+        const remember_me = JSON.stringify({
+            "uname": uname,
+            "pwd": pwd
+        });
+        console.log("setting remember me to");
+        console.log(remember_me);
+        localStorage.setItem("remember-me", remember_me);
+    } else {
+        console.log("deleting remember me");
+        localStorage.removeItem("remember-me");
+    }
+
 }
 
 function populateProfileAndEntries(index) {
