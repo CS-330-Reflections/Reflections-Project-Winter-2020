@@ -32,7 +32,11 @@ function saveForm() {
         old_entries = [form_object];
     }
 
-    localStorage.setItem("entries", JSON.stringify(old_entries));
+    const new_entries = JSON.stringify(old_entries);
+    localStorage.setItem("entries", new_entries);
+
+    const user_index = localStorage.getItem("current-user-index");
+    localStorage.setItem("user-" + user_index + "-entries", new_entries);
     window.location.href = "index.html";
 }
 
