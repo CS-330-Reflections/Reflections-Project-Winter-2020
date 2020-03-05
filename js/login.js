@@ -90,9 +90,9 @@ function populateProfileAndEntries(index) {
         localStorage.setItem("profile", JSON.stringify(profiles[index]["profile"]));
     }
 
-    if (!current_user_entries) {
+    if (current_user_entries) {
         console.log("Setting \"entries\" to current user entries");
-        localStorage.setItem("entries", JSON.stringify(current_user_entries));
+        localStorage.setItem("entries", current_user_entries);
     } else if (index < 2) {
         console.log("Populating prefilled user entries for user #");
         console.log(index);
