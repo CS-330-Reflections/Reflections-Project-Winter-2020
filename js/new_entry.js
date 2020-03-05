@@ -24,15 +24,20 @@ function saveForm() {
         "entry": $("#entry").val(),
     };
 
-    var old_entries = JSON.parse(localStorage.getItem("data"));
+    var old_entries = JSON.parse(localStorage.getItem("entries"));
 
     if (old_entries) {
-        old_entries.push(form_object);
+        old_entries.unshift(form_object);
+        old_entries = old_entries.sort((a, b) => moment(b.date).diff(moment(a.date)));
     } else {
         old_entries = [form_object];
     }
 
-    localStorage.setItem("data", JSON.stringify(old_entries));
+    const new_entries = JSON.stringify(old_entries);
+    localStorage.setItem("entries", new_entries);
+
+    const user_index = localStorage.getItem("current-user-index");
+    localStorage.setItem("user-" + user_index + "-entries", new_entries);
     window.location.href = "index.html";
 }
 
@@ -43,7 +48,7 @@ function moodClick(idc) {
     mood_val = JSON.parse(mood_JSON);
 
     if (mood_icon.style.color == "black") {
-        mood_icon.style.color = "#BFD7EA";
+        mood_icon.style.color = "#a9a5a6";
         mood_val = mood_val.filter(el => (el != idc));
     } else {
         mood_icon.style.color = "black";
@@ -52,4 +57,8 @@ function moodClick(idc) {
 
     new_mood_JSON = JSON.stringify(mood_val);
     mood_input.val(new_mood_JSON);
+}
+
+function toMain() {
+    window.location.href = "index.html";
 }

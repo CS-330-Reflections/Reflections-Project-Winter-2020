@@ -1,9 +1,45 @@
-<html>
+<html lang="en">
+
     <head>
-        <title>Main Page</title>
+        <title>Profile Page</title>
+
+        <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="third-party-libs/moment.min.js"></script>
+        <script src="js/index.js"></script>
+
+        <link rel="stylesheet" href="css/index.css">
 
     </head>
     <body id="container">
-        This is the main page.
+        <main>
+            <header>
+                <h1>reflections.
+                    <i class="fas fa-sign-out-alt" onclick="toLogin()"></i>
+                </h1>
+            </header>
+            <article>
+                <section id="profile-info">
+                    <img id= "pro-photo" src="">
+                    <h2 id="name">Name: </h2>
+                    <h2 id="age"> Age: </h2>
+                    <h5 id="time">Reflecting Since: </h5>
+                    <div id="bio">
+                        <h3>Who I am: </h3>
+                    </div>
+                    <div id="goals"> <h3>My reflection goals: </h3>
+                    </div>
+                </section>
+            </article>
+        </main>
     </body>
+    <footer>
+        <nav role=navigation>
+            <a href="new_entry.html">New entry</a>
+            <a href="old_entries.html">Old entries</a>
+        </nav>
+    </footer>
+
+    <script src="js/profiles.js"></script>
+
 </html>
