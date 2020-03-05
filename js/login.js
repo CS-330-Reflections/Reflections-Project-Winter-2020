@@ -104,3 +104,7 @@ function populateProfileAndEntries(index) {
         console.log("Error: This is a new user with no entries!");
     }
 }
+
+function restore() {
+    localStorage.clear();
+}
