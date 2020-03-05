@@ -86,6 +86,7 @@ button:hover{
 
  .entry {
      display:block;
+     padding-bottom: 10px;
 }
 
  #editor {
