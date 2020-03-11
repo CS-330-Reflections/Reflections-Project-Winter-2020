@@ -14,8 +14,10 @@ body {
 }
 
 button {
-    color: white;
-    background: black;
+    border: 5px double black;
+    cursor: pointer;
+    height: 40px;
+    width: 75px;
 }
 form{
     padding-top: 80px;
@@ -47,6 +49,8 @@ input[type=date]::-webkit-inner-spin-button {
 select {
     border-style: double;
     border-width: 5px;
+    border-color: black;
+    cursor: pointer;
 }
 
 .mood-list i {
@@ -57,6 +61,8 @@ select {
 input {
     border-width: 5px;
     border-style: double;
+    cursor: pointer;
+    background-color: white;
 }
 
 textarea {
@@ -70,7 +76,7 @@ textarea {
 
 .mood-list i:hover {
     cursor: pointer;
-    color: #f6961e !important;
+    color: #f6961e !important;  
 }
 
 button:hover{
@@ -80,16 +86,16 @@ button:hover{
     display: inline-block;
 }
 
- .prompt {
-     display:block;
+.prompt {
+    display:block;
 }
 
- .entry {
-     display:block;
-     padding-bottom: 10px;
+.entry {
+    display:block;
+    padding-bottom: 10px;
 }
 
- #editor {
-     height: 30vh;
-     background-color: white;
+#editor {
+    height: 30vh;
+    background-color: white;
 }
