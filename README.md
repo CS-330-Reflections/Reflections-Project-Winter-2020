@@ -12,5 +12,7 @@ We also learned that our target audience was skewed towards the younger side. Yo
 ## PAPER PROTOTYPING
 We then moved on to a paper prototype that was tested on several people our age, as they were isolated as the target audience we are trying to reach. A video of the prototype usage is embedded below, simply click the prototype image. Although simple, our prototype was well received by our users. The layout was easily understandable, and the mood icons were a specific favorite of most users. Some users did note we did not have a way to go to previous pages on our prototype. Therefore, we took away that our design needed to be simple and include mood icons, and a home-type button would be a necessity. 
 
+<a href="https://drive.google.com/file/d/15aPMutVLAfQgz5U7JYhiQTO_0GaT0I2x/view?usp=sharing">Paper Prototype</a>
+
 [<img src="paper.png" width = 200px>](https://drive.google.com/file/d/15aPMutVLAfQgz5U7JYhiQTO_0GaT0I2x/view?usp=sharing "Paper Prototype Video")
 
