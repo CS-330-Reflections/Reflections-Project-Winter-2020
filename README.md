@@ -17,16 +17,16 @@ We then moved on to a paper prototype that was tested on several people our age,
 ## HIGH FIDELITY PROTOTYPING
 We decided our final prototype would be a journaling app that supported an online journal. We wanted our users to feel like this journal was theirs, so we implemented user profiles to act as a functional homepage and a way to customize their experience. First, the user logs into their account, where they are brought to their homepage.
 
-INSERT FINAL IMAGES FOR HOMEPAGES
+<img src="home.jpg" width = 400px>
 
 From the homepage, the user can either opt to customize their account, search their old entries, or create a new entry.
 The data collection acts as a new entry page, in which the user can create a new journal entry, and add a mood or visual. Once the user clicks submit, the entry is saved and the user is brought back to their homepage. 
 
-INSERT FINAL IMAGES FOR NEW ENTRY PAGE
+<img src="new.jpg" width = 400px>
 
 The filter acts as the old entries storage, in which a user can filter their database on mood or prompt to find the entry they are interested in. 
 
-INSERT FINAL IMAGES FOR OLD ENTRIES PAGE
+<img src="old.jpg" width = 400px>
 
 
 
