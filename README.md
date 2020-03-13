@@ -38,16 +38,12 @@ Our team managed to build an aesthetically pleasing app with most of the tasks w
 Open the website in Google Chrome by opening the login site at login.html and typing either one of our preset users:
 
 User 1: Nicole
-
 Username: nicole123
-
 Password: nicole123
 
 
 User 2: Andres
-
 Username: andres123
-
 Password: andres123
 
 This should take you to the main page of our website, which is the user profile. It has a picture of the user, a biography and meditation goals. Also at the bottom are two buttons, one to submit a new entry and another one to check previous entries.
