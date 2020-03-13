@@ -29,4 +29,27 @@ The filter acts as the old entries storage, in which a user can filter their dat
 <img src="old.jpg" width = 400px>
 
 
+## REFLECTION
+
+Our team managed to build an aesthetically pleasing app with most of the tasks we set out to accomplish. We have a well structured reflection app with two profiles and the ability to look at previous entries and filter them, which is very close to what we thought about doing during our paper prototype. We implemented a lot of the feedback we got during the studio sessions, mostly limited to functionality but also related to aesthetics and presentation. In the future, if we were to continue building upon this app, we think that it would be useful to display in terms of calendar so that it is easier to navigate the past entries, and apply more filters and more tags for the entries. We also believe that it would be useful to let everything be more personalized, such as make a very unique profile or add a rich text editor so that entries can reflect the current state of the user. Also, it would be useful to run more user research and collect information on whether we would want to be able to edit or delete previous entries.
+
+## LINKS
+
+Open the website in Google Chrome by opening the login site at login.html and typing either one of our preset users:
+User 1: Nicole
+Username: nicole123
+Password: nicole123
+
+User 2: Andres
+Username: andres123
+Password: andres123
+
+This should take you to the main page of our website, which is the user profile. It has a picture of the user, a biography and meditation goals. Also at the bottom are two buttons, one to submit a new entry and another one to check previous entries.
+
+Clicking the New Entries button would take you to the page where you submit a new entry and you get the option to tag your entries according to different filters, such as date and mood, and you get to add a file that would most likely be an image. 
+
+Clicking the Previous Entries button takes you to a list of all the previous entries, sorted default by chronological order. It also lets the user filter through previous entries according to the mood and to the prompt that was selected.
+
+
+
 
