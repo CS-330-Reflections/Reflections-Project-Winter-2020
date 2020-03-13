@@ -37,12 +37,12 @@ Our team managed to build an aesthetically pleasing app with most of the tasks w
 
 Open the website in Google Chrome by opening the login site at login.html and typing either one of our preset users:
 
-User 1: Nicole
+### User 1: Nicole
 Username: nicole123
 Password: nicole123
 
 
-User 2: Andres
+### User 2: Andres
 Username: andres123
 Password: andres123
 
