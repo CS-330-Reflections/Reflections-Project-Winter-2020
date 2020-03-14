@@ -1,52 +1,57 @@
 <html lang="en">
 
-    <head>
-        <title>Profile Page</title>
+<head>
+    <title>Profile Page</title>
 
-        <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="third-party-libs/moment.min.js"></script>
-        <script src="js/index.js"></script>
-        <script src="js/common.js"></script>
+    <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="third-party-libs/moment.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
 
-        <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 
-    </head>
-    <body id="container">
-        <main>
-            <header>
-                <h1><a class="home" href="index.html">reflections.</a>
-                    <span id="logout" onclick="toLogin()">
+</head>
+
+<body id="container">
+    <main>
+        <header>
+            <h1><a class="home" href="index.html">reflections.</a>
+                <span id="logout" onclick="toLogin()">
                     <span id="logout-text">Log Out</span>
                     <i class="fas fa-sign-out-alt"></i>
-                    </span>
-                </h1>
-            </header>
-            <article>
-                <section id="profile-info">
-                    <div id="left">
-                        <img id= "pro-photo" src="">
-                        <nav role=navigation>
-                            <a class="nav" href="new_entry.html">New entry</a>
-                            <a class="nav" href="old_entries.html">Old entries</a>
-                        </nav>
-                    </div>
-                    <h2 id="name">Name: <div class="content"></div></h2>
-                    <button id="update" type="button" onclick="updateProfile()">
-                        Update profile
-                    </button>
-                    <h2 id="age"> Age: </h2>
-                    <h2 id="time">Reflecting Since: </h2>
-                    <div id="bio">
-                        <h3>Who I am: </h3><div class="content"></div>
-                    </div>
-                    <div id="goals"> <h3>My reflection goals: </h3><div class="content"></div>
-                    </div>
-                </section>
-            </article>
-        </main>
-    </body>
+                </span>
+            </h1>
+        </header>
+        <article>
+            <section id="profile-info">
+                <div id="left">
+                    <img id="pro-photo" src="">
+                    <nav role=navigation>
+                        <a class="nav" href="new_entry.html">New entry</a>
+                        <a class="nav" href="old_entries.html">Old entries</a>
+                    </nav>
+                </div>
+                <h2 id="name">Name: <div class="content"></div>
+                </h2>
+                <button id="update" type="button" onclick="updateProfile()">
+                    Update profile
+                </button>
+                <h2 id="age"> Age: </h2>
+                <h2 id="time">Reflecting Since: </h2>
+                <div id="bio">
+                    <h3>Who I am: </h3>
+                    <div class="content"></div>
+                </div>
+                <div id="goals">
+                    <h3>My reflection goals: </h3>
+                    <div class="content"></div>
+                </div>
+            </section>
+        </article>
+    </main>
+</body>
 
-    <script src="js/profiles.js"></script>
+<script src="js/profiles.js"></script>
 
 </html>
