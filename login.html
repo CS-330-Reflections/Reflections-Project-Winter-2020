@@ -18,6 +18,10 @@
     </header>
 
     <br>
+    <article id="top">
+        how have you grown? <br>
+        &emsp; &emsp; &emsp; who will you become?
+    </article>
 
     <form action="javascript:login();">
 
@@ -25,7 +29,7 @@
             <label for="uname"><b>Username</b></label>
             <input id="uname" type="text" placeholder="Enter Username" name="uname" required> <br>
 
-            <label for="pwd"><b>Password</b></label>
+            <label for="pwd" id="plabel"><b>Password</b></label>
             <input id="pwd" type="password" placeholder="Enter Password" name="pwd" required> <br>
 
             <button id="submit" type="submit">Login</button>
@@ -37,6 +41,12 @@
             <!-- <span class="pwd"> <a href="#">Create Account</a></span> -->
         </div>
     </form>
+
+    <article id ="bottom">
+        welcome. it's good to see you <br>
+        reflections is a web-based app for your self-reflection needs <br>
+        simply log in to reflect, and see yourself grow <br>
+    </article>
 
     <footer>
         <button id="restore" type="button" onclick="restore()">Restore testing state to defaults</button>
