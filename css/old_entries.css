@@ -12,6 +12,11 @@ form{
     padding-left: 20px;
 }
 
+.home {
+    text-decoration: none;
+    color: black;
+}
+
 #container{
     background: url(../assets/back2.png);
     background-repeat: no-repeat;

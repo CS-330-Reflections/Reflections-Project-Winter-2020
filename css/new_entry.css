@@ -9,6 +9,11 @@
     background-size: 100%;
 }
 
+.home {
+    text-decoration: none;
+    color: black;
+}
+
 body {
     text-align: center;
 }
@@ -76,7 +81,7 @@ textarea {
 
 .mood-list i:hover {
     cursor: pointer;
-    color: #f6961e !important;  
+    color: #f6961e !important;
 }
 
 button:hover{

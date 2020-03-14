@@ -74,7 +74,12 @@ footer{
     grid-area: f;
 }
 
-a{
+.home {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
     color: white;
     background-color: black;
     padding: 10px;
@@ -84,7 +89,7 @@ a{
     text-decoration: none;
 }
 
-a:hover{
+.nav:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
