@@ -1,16 +1,16 @@
-*{
+* {
     font-family: "Monaco";
 }
 
-form{
+form {
     padding-top: 80px;
     justify-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1.5fr;
     grid-template-rows: 50px auto;
     grid-template-areas:
-    "a a b b"
-    "c c c .";
+        "a a b b"
+        "c c c .";
     padding-left: 20px;
 }
 
@@ -19,29 +19,30 @@ form{
     color: black;
 }
 
-#container{
+#container {
     background: url(../assets/back2.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
-.prompt-filter{
+
+.prompt-filter {
     grid-area: a;
 }
 
-.mood-filter{
+.mood-filter {
     grid-area: b;
     justify-self: start;
     padding-left: 15vw;
 }
 
-header i{
+header i {
     cursor: alias;
     position: absolute;
     right: 75px;
 }
 
-header{
+header {
     border-bottom: 5px double black;
     margin: -10px;
     padding-left: 35px;
@@ -51,36 +52,35 @@ header{
     width: 100%;
 }
 
-
-button{
+button {
     background-color: black;
-    color:white;
+    color: white;
     cursor: alias;
     height: 40px;
     width: 75px;
 }
 
-button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-.past-entries{
+.past-entries {
     padding-left: 10vw;
     grid-area: c;
 }
 
-select{
+select {
     background-color: black;
-    color:white;
+    color: white;
     cursor: alias;
     height: 40px;
     width: 100%;
 }
 
-select:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+select:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-#mood-filter{
+#mood-filter {
     width: 200px;
 }

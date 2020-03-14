@@ -1,8 +1,8 @@
-*{
+* {
     font-family: "Monaco";
 }
 
-#container{
+#container {
     background: url(../assets/index.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -11,7 +11,7 @@
     text-align: justify;
 }
 
-header{
+header {
     border-bottom: 5px double black;
     margin: -10px;
     padding-left: 35px;
@@ -21,19 +21,20 @@ header{
     width: 100%;
 }
 
-header i{
+header i {
     cursor: alias;
     position: absolute;
     right: 75px;
 }
 
-#profile-info{
+#profile-info {
     padding-right: 20%;
     padding-top: 100px;
     display: grid;
     grid-template-columns: 1fr 0.5fr 1.5fr 0.5fr;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "a . b update"
+    grid-template-areas:
+        "a . b update"
         "a . c ."
         "a . d ."
         "a . e ."
@@ -41,21 +42,22 @@ header i{
     padding-left: 20px;
 }
 
-footer{
-    display:flex;
+footer {
+    display: flex;
     justify-content: center;
     bottom: 50px;
     width: 100%;
     margin-top: 20px;
 }
 
-#pro-photo{
+#pro-photo {
     grid-area: a;
     max-height: 75%;
     max-width: 75%;
     border: 5px double black;
 }
-#name{
+
+#name {
     grid-area: b;
     height: 100%;
 }
@@ -63,19 +65,20 @@ footer{
 #update {
     grid-area: update;
 }
-#age{
+
+#age {
     grid-area: c;
 }
 
-#time{
+#time {
     grid-area: d;
 }
 
-#bio{
+#bio {
     grid-area: e;
 }
 
-#goals{
+#goals {
     grid-area: f;
 }
 

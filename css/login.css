@@ -1,14 +1,14 @@
-*{
+* {
     font-family: "Monaco";
 }
 
-header i{
+header i {
     cursor: alias;
     position: absolute;
     right: 75px;
 }
 
-#container{
+#container {
     background: url(../assets/login_b.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -16,19 +16,18 @@ header i{
     width: 100%;
 }
 
-
-form{
+form {
     display: flex;
     justify-content: center;
     padding-top: 80px;
 }
 
-.container{
+.container {
     text-align: center;
     line-height: 50px;
 }
 
-header{
+header {
     border-bottom: 5px double black;
     margin: -10px;
     padding-left: 35px;
@@ -38,16 +37,16 @@ header{
     width: 100%;
 }
 
-button{
+button {
     background-color: black;
-    color:white;
+    color: white;
     cursor: pointer;
     height: 40px;
     width: 75px;
 }
 
-button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 #restore {

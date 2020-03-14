@@ -3,7 +3,7 @@
     color: "black";
 }
 
-#container{
+#container {
     background: url(../assets/back1.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -24,11 +24,13 @@ button {
     height: 40px;
     width: 75px;
 }
-form{
+
+form {
     padding-top: 80px;
     line-height: 50px;
 }
-header{
+
+header {
     text-align: left;
     border-bottom: 5px double black;
     margin: -10px;
@@ -39,7 +41,7 @@ header{
     width: 100%;
 }
 
-header i{
+header i {
     cursor: alias;
     position: absolute;
     right: 75px;
@@ -84,19 +86,20 @@ textarea {
     color: #f6961e !important;
 }
 
-button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
 .mood {
     display: inline-block;
 }
 
 .prompt {
-    display:block;
+    display: block;
 }
 
 .entry {
-    display:block;
+    display: block;
     padding-bottom: 10px;
 }
 
