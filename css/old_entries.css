@@ -75,6 +75,19 @@ button:hover {
     grid-area: c;
 }
 
+.past-entry {
+    margin-left: 10vw;
+    margin-bottom: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border: 5px double black;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 900;
+}
+
 select {
     background-color: black;
     color: white;

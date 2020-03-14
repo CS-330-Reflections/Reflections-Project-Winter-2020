@@ -27,27 +27,28 @@ function filter() {
             })
             .forEach(entry => {
                 $("#prev-entries").append(`
-                        <div class="past-entries">
+                        <div class="past-entry">
                           <p id="prev-entries">
 
-                          Date: ${moment(entry.date).format("l")} <br>
+                          <span class="title">Date:</span> ${moment(entry.date).format("l")} <br>
                           ${
                               entry.mood.toString() == "" ?
                               "" :
-                              `Mood: ${entry.mood.toString()} <br>`
+                              `<span class="title">Mood:</span> ${entry.mood.toString()} <br>`
                           }
+                          <br>
                           ${
                               entry.visual == "" ?
                               "" :
-                              `Visual:
+                              `<span class="title">Visual:</span>
                                   <img style="display:block;max-width:100%;height:auto;"
                                         id="base64image"
-                                        src="${entry.visual}"/>`
+                                        src="${entry.visual}"/> <br>`
                           }
-                          Prompt: ${entry.prompt} <br>
-                          Entry: ${entry.entry} <br>
+                          <span class="title">Prompt:</span> ${entry.prompt} <br>
+                          <span class="title">Entry:</span> ${entry.entry} <br>
 
-                          </p> <br> <br>
+                          </p>
                         </div>
                     `);
             });
