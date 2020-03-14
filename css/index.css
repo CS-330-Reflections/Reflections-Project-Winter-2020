@@ -21,10 +21,15 @@ header {
     width: 100%;
 }
 
-header i {
+#logout {
     cursor: alias;
     position: absolute;
     right: 75px;
+}
+
+#logout-text {
+    font-size: 25px;
+    padding-bottom: 25px;
 }
 
 #profile-info {

@@ -36,10 +36,16 @@ form {
     padding-left: 15vw;
 }
 
-header i {
+#home {
     cursor: alias;
     position: absolute;
     right: 75px;
+    color: black;
+}
+
+#home-text {
+    font-size: 25px;
+    padding-bottom: 25px;
 }
 
 header {
