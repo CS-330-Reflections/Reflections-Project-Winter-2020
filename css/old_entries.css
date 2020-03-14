@@ -6,9 +6,11 @@ form{
     padding-top: 80px;
     justify-items: center;
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "a b c";
+    grid-template-columns: 1fr 1fr 1fr 1.5fr;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+    "a a b b"
+    "c c c .";
     padding-left: 20px;
 }
 
@@ -22,15 +24,15 @@ form{
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    width: 100%;
-    text-align: justify;
 }
 .prompt-filter{
-    grid-area: "a";
+    grid-area: a;
 }
 
 .mood-filter{
-    grid-area: "b";
+    grid-area: b;
+    justify-self: start;
+    padding-left: 15vw;
 }
 
 header i{
@@ -63,8 +65,8 @@ button:hover{
 }
 
 .past-entries{
-    width: 100%;
-    padding-left: 45%;
+    padding-left: 10vw;
+    grid-area: c;
 }
 
 select{
