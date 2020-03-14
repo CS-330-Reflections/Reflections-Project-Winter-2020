@@ -54,6 +54,13 @@ function saveEdits(id) {
     element.html(input);
 }
 
+function fixTextareas() {
+    var textareas = document.getElementsByTagName("textarea");
+    for (textarea of textareas) {
+        textarea.style.height = (textarea.scrollHeight) + "px";
+    }
+}
+
 function updateProfile() {
     if (is_editing) {
         const all_elements = editable_elements.flat();
@@ -68,6 +75,7 @@ function updateProfile() {
         for (element_id of editable_elements[1]) {
             makeEditable(element_id, "textarea");
         }
+        fixTextareas();
         is_editing = true;
     }
 }

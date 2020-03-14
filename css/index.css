@@ -38,16 +38,20 @@ header i {
         "a . c ."
         "a . d ."
         "a . e ."
-        "a . f .";
+        "nav . f .";
     padding-left: 20px;
+    padding-bottom: 50px;
 }
 
-footer {
-    display: flex;
+nav {
+    grid-area: nav;
+    display: inline-block;
     justify-content: center;
-    bottom: 50px;
     width: 100%;
-    margin-top: 20px;
+}
+
+a {
+    margin-left: 8px;
 }
 
 #pro-photo {
