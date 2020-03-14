@@ -7,6 +7,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="third-party-libs/moment.min.js"></script>
         <script src="js/index.js"></script>
+        <script src="js/common.js"></script>
 
         <link rel="stylesheet" href="css/index.css">
 
@@ -21,13 +22,16 @@
             <article>
                 <section id="profile-info">
                     <img id= "pro-photo" src="">
-                    <h2 id="name">Name: </h2>
+                    <h2 id="name">Name: <div class="content"></div></h2>
+                    <button id="update" type="button" onclick="updateProfile()">
+                        Update profile
+                    </button>
                     <h2 id="age"> Age: </h2>
                     <h5 id="time">Reflecting Since: </h5>
                     <div id="bio">
-                        <h3>Who I am: </h3>
+                        <h3>Who I am: </h3><div class="content"></div>
                     </div>
-                    <div id="goals"> <h3>My reflection goals: </h3>
+                    <div id="goals"> <h3>My reflection goals: </h3><div class="content"></div>
                     </div>
                 </section>
             </article>

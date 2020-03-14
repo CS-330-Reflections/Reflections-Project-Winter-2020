@@ -24,20 +24,17 @@ function saveForm() {
         "entry": $("#entry").val(),
     };
 
-    var old_entries = JSON.parse(localStorage.getItem("entries"));
+    var old_entries = getStoreItemDe("entries");
 
     if (old_entries) {
         old_entries.unshift(form_object);
-        old_entries = old_entries.sort((a, b) => moment(b.date).diff(moment(a.date)));
+        new_entries = old_entries.sort((a, b) => moment(b.date).diff(moment(a.date)));
     } else {
-        old_entries = [form_object];
+        new_entries = [form_object];
     }
 
-    const new_entries = JSON.stringify(old_entries);
-    localStorage.setItem("entries", new_entries);
+    persistData("entries", new_entries);
 
-    const user_index = localStorage.getItem("current-user-index");
-    localStorage.setItem("user-" + user_index + "-entries", new_entries);
     window.location.href = "index.html";
 }
 
