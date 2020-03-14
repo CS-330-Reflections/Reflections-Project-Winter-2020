@@ -15,7 +15,11 @@ We then moved on to a paper prototype that was tested on several people our age,
 [<img src="paper.png" width = 200px>](https://drive.google.com/file/d/15aPMutVLAfQgz5U7JYhiQTO_0GaT0I2x/view?usp=sharing "Paper Prototype Video")
 
 ## HIGH FIDELITY PROTOTYPING
-We decided our final prototype would be a journaling app that supported an online journal. We wanted our users to feel like this journal was theirs, so we implemented user profiles to act as a functional homepage and a way to customize their experience. First, the user logs into their account, where they are brought to their homepage.
+We decided our final prototype would be a journaling app that supported an online journal. Our first high fidelity prototype consisted of just the page for creating new entries, as this was what we first pictured when we considered an online journal. This page was intended to support text entry, with multimedia attachments, a mood selection, date selection, and the option for the user to write their entry from a prompt, in addition to the regular option of writing a free entry.
+
+<img src="prototype1_screenshot.PNG" width = 400px>
+
+We had made several changes and additions by the time we created our final prototype. We wanted our users to feel like this journal was theirs, so we implemented user profiles to act as a functional homepage and a way to customize their experience. First, the user logs into their account, where they are brought to their homepage.
 
 <img src="home.jpg" width = 400px>
 
