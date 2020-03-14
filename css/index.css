@@ -31,13 +31,13 @@ header i{
     padding-right: 20%;
     padding-top: 100px;
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 1fr 0.5fr 1.5fr 0.5fr;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "a b"
-                         "a c"
-                         "a d"
-                         "a e"
-                         "a f";
+    grid-template-areas: "a . b update"
+        "a . c ."
+        "a . d ."
+        "a . e ."
+        "a . f .";
     padding-left: 20px;
 }
 
@@ -46,17 +46,22 @@ footer{
     justify-content: center;
     bottom: 50px;
     width: 100%;
+    margin-top: 20px;
 }
 
 #pro-photo{
     grid-area: a;
-    height: 200px;
+    max-height: 75%;
+    max-width: 75%;
     border: 5px double black;
 }
 #name{
     grid-area: b;
     height: 100%;
+}
 
+#update {
+    grid-area: update;
 }
 #age{
     grid-area: c;
@@ -79,7 +84,7 @@ footer{
     color: black;
 }
 
-.nav {
+button, .nav {
     color: white;
     background-color: black;
     padding: 10px;
@@ -89,8 +94,18 @@ footer{
     text-decoration: none;
 }
 
-.nav:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+button {
+    margin-top: 20px;
+    height: 50px;
+    width: 140px;
+}
+
+button:hover, .nav:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .content {
