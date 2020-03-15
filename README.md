@@ -21,20 +21,20 @@ Although simple, our prototype was well received by our users. The layout was ea
 
 We decided our final prototype would be a journaling app that supported an online journal. Our first high fidelity prototype consisted of just the page for creating new entries, as this was what we first pictured when we considered an online journal. This page was intended to support text entry, with multimedia attachments, a mood selection, date selection, and the option for the user to write their entry from a prompt, in addition to the regular option of writing a free entry.
 
-<img src="prototype1_screenshot.PNG" width = 400px>
+<img src="prototype1_screenshot.PNG" width = 800px>
 
 We had made several changes and additions by the time we created our final prototype. We wanted our users to feel like this journal was theirs, so we implemented user profiles to act as a functional homepage and a way to customize their experience. First, the user logs into their account, where they are brought to their homepage.
 
-<img src="home.jpg" width = 400px>
+<img src="home.png" width = 800px>
 
 From the homepage, the user can either opt to customize their account, search their old entries, or create a new entry.
 The data collection acts as a new entry page, in which the user can create a new journal entry, and add a mood or visual. Once the user clicks submit, the entry is saved and the user is brought back to their homepage.
 
-<img src="new.jpg" width = 400px>
+<img src="new.png" width = 800px>
 
-The filter acts as the old entries storage, in which a user can filter their database on mood or prompt to find the entry they are interested in.
+The filter acts as the old entries storage, in which a user can filter their database on mood or prompt to find the entry they are interested in, or delete their entries.
 
-<img src="old.jpg" width = 400px>
+<img src="old.png" width = 800px>
 
 ## REFLECTION
 
@@ -42,7 +42,7 @@ Our team managed to build an aesthetically pleasing app with most of the tasks w
 
 ## LINKS
 
-Open the website in Google Chrome (preferably at least in 1440x700 resolution) by opening the login site at [login.html](https://cs-330-reflections.github.io/Reflections-Project-Winter-2020/login.html) and typing either one of our preset users:
+Open the website in Google Chrome (preferably exactly in 1440x700 resolution) by opening the login site at [login.html](https://cs-330-reflections.github.io/Reflections-Project-Winter-2020/login.html) and typing either one of our preset users:
 
 ### User 1: Nicole
 
