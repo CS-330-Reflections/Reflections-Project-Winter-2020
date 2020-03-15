@@ -8,6 +8,13 @@ const prompt_map = {
     "prompt6": "What were the major decisions that led you to this point in life?",
 };
 
+function deleteEntry(index) {
+    var entries = getStoreItemDe("entries")
+    entries.splice(index, 1);
+    persistData("entries", entries);
+    filter();
+}
+
 function filter() {
     const prompt_picked = $("#prompt-filter").val();
     const mood_picked = $("#mood-filter").val();
@@ -15,22 +22,23 @@ function filter() {
 
     $("#prev-entries").html("Past entries:");
 
-    const filtered =
-        getStoreItemDe("entries")
-        .filter(entry => prompt_picked == "null" || entry.prompt == prompt_picked)
-        .filter(entry => mood_picked == "null" || entry.mood.includes(mood_picked));
+    const filtered = Array.from(getStoreItemDe("entries").entries())
+        .filter(([index, entry]) => prompt_picked == "null" || entry.prompt == prompt_picked)
+        .filter(([index, entry]) => mood_picked == "null" || entry.mood.includes(mood_picked));
 
     if (filtered.length > 0) {
-        filtered.map(entry => {
+        filtered.map(([index, entry]) => {
                 entry.prompt = prompt_map[entry.prompt];
-                return entry;
+                return [index, entry];
             })
-            .forEach(entry => {
+            .forEach(([index, entry]) => {
                 $("#prev-entries").append(`
                         <div class="past-entry">
                           <p id="prev-entries">
 
-                          <span class="title">Date:</span> ${moment(entry.date).format("l")} <br>
+                          <span class="title">Date:</span> ${moment(entry.date).format("l")}
+                          <span class="delete" onClick="deleteEntry(${index});"><i class="fas fa-trash-alt"></i></span>
+                          <br>
                           ${
                               entry.mood.toString() == "" ?
                               "" :
