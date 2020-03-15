@@ -19,12 +19,12 @@ header i {
 form {
     display: flex;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 20px;
 }
 
 .container {
     text-align: center;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 header {
@@ -56,4 +56,19 @@ button:hover {
     background-color: grey;
     height: auto;
     width: auto;
+}
+
+#top{
+    padding-left: 60px;
+    padding-top: 100px;
+    font-size: larger;
+    line-height: 40px;
+    color: #488610;
+    font-style: italic;
+}
+
+#bottom{
+    text-align: center;
+    padding-top: 20px;
+    line-height: 50px;
 }
